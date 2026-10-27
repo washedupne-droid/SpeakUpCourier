@@ -2,7 +2,7 @@
 
 Speak your dialogue choices out loud in **Fallout: New Vegas**. When dialogue options are on screen, say the line you want, and the mod highlights and selects it.
 
-Nexus Mods page: https://www.nexusmods.com/newvegas/mods/<MOD ID>
+Nexus Mods page: https://www.nexusmods.com/newvegas/mods/100268
 
 This repository holds the full source of the two compiled parts of the mod:
 
