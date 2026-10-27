@@ -1,0 +1,11 @@
+# Build output
+Release/
+Debug/
+.vs/
+*.vcxproj.user
+build/
+dist/
+__pycache__/
+*.spec
+# Speech model (download separately, see speech-core/README.md)
+vosk-model-*/

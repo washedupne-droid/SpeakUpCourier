@@ -1,0 +1,136 @@
+{
+    "modName": "SpeakUpCourier",
+    "displayName": "Speak Up Courier",
+    "description": "Speak your dialogue choices out loud",
+    "saveFile": "SpeakUpCourier/settings.ini",
+    "minMCMVersion": 1.0,
+    "minModVersion": 1.0,
+    "requirements": [
+        {
+            "type": "file",
+            "file": "NVSE/Plugins/voice_dialogue.dll"
+        }
+    ],
+    "submenus": {
+        "1": {
+            "columns": 1,
+            "listTitle": "Settings",
+            "pageTitle": "Speak Up Courier",
+            "options": {
+                "1": {
+                    "type": 0,
+                    "enable": 1,
+                    "title": "Listening"
+                },
+                "2": {
+                    "type": 1,
+                    "enable": 1,
+                    "title": "Listen Mode",
+                    "mouse": "Auto Listen: just talk while dialogue options are on screen. Push-to-Talk: only listens while you hold the push-to-talk key.",
+                    "strings": [
+                        "Auto Listen in Conversations",
+                        "Push-to-Talk"
+                    ],
+                    "vars": [
+                        {
+                            "configINI": "General:iListenMode",
+                            "default": 0
+                        }
+                    ]
+                },
+                "3": {
+                    "type": 3,
+                    "title": "Push-to-Talk Key",
+                    "mouse": "Hold this key while you say your line. Only used in Push-to-Talk mode.",
+                    "vars": [
+                        {
+                            "configINI": "General:iPushToTalkKey",
+                            "default": 157
+                        }
+                    ],
+                    "enable": 1
+                },
+                "4": {
+                    "type": 3,
+                    "enable": 1,
+                    "title": "Switch Mode Key",
+                    "mouse": "Press in game to switch between Auto Listen and Push-to-Talk.",
+                    "vars": [
+                        {
+                            "configINI": "General:iToggleKey",
+                            "default": 68
+                        }
+                    ]
+                },
+                "6": {
+                    "type": 0,
+                    "enable": 1,
+                    "title": "Selection"
+                },
+                "7": {
+                    "type": 2,
+                    "enable": 1,
+                    "title": "Highlight Time",
+                    "mouse": "How long your chosen line stays highlighted before it's selected, so it looks like you clicked it. 0 selects instantly.",
+                    "suffix": " ms",
+                    "scale": {
+                        "valueDecimal": 0,
+                        "valueIncrement": 50,
+                        "valueMin": 0,
+                        "valueMax": 1000,
+                        "suffix": " ms"
+                    },
+                    "vars": [
+                        {
+                            "configINI": "General:iClickDelayMs",
+                            "default": 250
+                        }
+                    ]
+                },
+                "9": {
+                    "type": 0,
+                    "enable": 1,
+                    "title": "When You're Not Understood"
+                },
+                "10": {
+                    "type": 4,
+                    "enable": 1,
+                    "title": "NPC \"Hm?\" Sound",
+                    "mouse": "The NPC gives a short male, female or robot \"hm?\" when your line wasn't caught.",
+                    "vars": [
+                        {
+                            "configINI": "General:bHmSound",
+                            "default": 1
+                        }
+                    ]
+                },
+                "11": {
+                    "type": 4,
+                    "enable": 1,
+                    "title": "\"Say That Again?\" Message",
+                    "mouse": "Shows a short message in the corner when your line wasn't caught.",
+                    "vars": [
+                        {
+                            "configINI": "General:bMissMessage",
+                            "default": 1
+                        }
+                    ]
+                },
+                "12": {
+                    "type": 4,
+                    "title": "Show What Was Heard",
+                    "mouse": "Adds what the mod heard to the message. Handy for bug reports.",
+                    "vars": [
+                        {
+                            "configINI": "General:bShowHeard",
+                            "default": 0
+                        }
+                    ],
+                    "enable": 1
+                }
+            },
+            "active": 1,
+            "enable": 1
+        }
+    }
+}

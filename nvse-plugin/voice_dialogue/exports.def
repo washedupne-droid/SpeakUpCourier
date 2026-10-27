@@ -1,0 +1,4 @@
+LIBRARY	"voice_dialogue"
+EXPORTS
+NVSEPlugin_Query
+NVSEPlugin_Load
